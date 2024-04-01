@@ -500,8 +500,8 @@ header nav ul li a {
 .menu-btn {
     color: white;
     text-decoration: none;
-    margin: 10  5px; /* Atur jarak horizontal antara tombol */
-    padding: 0px 150px; /* Atur padding tombol */
+    margin: 5px; /* Atur jarak antar tombol */
+    padding: 10px 20px; /* Atur padding tombol */
     font-weight: bold;
     border: 1px solid transparent; /* Tambahkan border */
     border-radius: 5px; /* Agar tombol terlihat lebih menarik */
