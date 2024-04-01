@@ -1,0 +1,44 @@
+/* media.css */
+
+/* Styling untuk perangkat seluler dengan lebar layar maksimum 768px */
+@media only screen and (max-width: 768px) {
+    header.main-header {
+        padding: 10px; /* Mengurangi padding header */
+    }
+    header.main-header h1 {
+        font-size: 20px; /* Mengurangi ukuran font judul header */
+    }
+    .menu-toggle {
+        display: block; /* Menampilkan ikon toggle menu */
+    }
+    .menu {
+        display: none; /* Menyembunyikan menu */
+    }
+    .menu.active {
+        display: block; /* Menampilkan menu saat toggle aktif */
+    }
+    .menu a {
+        font-size: 1rem; /* Mengurangi ukuran font menu */
+        padding: 8px 0; /* Mengurangi padding menu */
+    }
+    .menu-bar {
+        width: 20px; /* Mengurangi lebar garis menu */
+        height: 2px; /* Mengurangi tinggi garis menu */
+        margin: 4px 0; /* Mengurangi margin garis menu */
+    }
+    .bagian-open-trip,
+    .bagian-sewa-kapal,
+    .bagian-social-media,
+    .kontak-kami,
+    .bagian-faqs {
+        padding: 20px; /* Mengurangi padding di bagian-bagian ini */
+    }
+    .footer {
+        padding: 30px 0; /* Mengurangi padding footer */
+    }
+}
+
+/* Styling tambahan jika diperlukan untuk perangkat dengan lebar layar yang lebih kecil */
+@media only screen and (max-width: 480px) {
+    /* Tambahkan aturan CSS tambahan di sini jika diperlukan */
+}

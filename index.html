@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours and Travel Labuan Bajo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <style>
+        .menu-toggle {
+            display: block;
+            cursor: pointer;
+        }
+
+        .menu-bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .menu.active {
+            display: block;
+        }
+
+        .menu a {
+            font-size: 1.2rem;
+            color: #fff; /* Warna tulisan cerah */
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            transition: background-color 0.3s ease; /* Transisi latar belakang */
+        }
+
+        .menu a:hover {
+            background-color: rgba(106, 146, 255, 0.5); /* Warna latar belakang biru saat hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header" style="background-image: url('./assets/gambar/kplbesar.jpg'); background-size: cover; background-position: center; padding: 20px; text-align: center;">
+        <img src="./assets/gambar/logo.jpg" style="width: 70px; height: 70px; border-radius: 50%;">
+        <h1 style="color: aqua;">Tours and Travel Labuan Bajo</h1>
+        <div class="menu-toggle">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+        </div>
+        <nav class="menu">
+            <ul style="list-style: none; padding: 0;">
+                <li><a href="#paket-wisata" class="menu-btn">Paket Wisata</a></li>
+                <li><a href="#open-trip" class="menu-btn">Open Trip</a></li>
+                <li><a href="#sewa-kapal" class="menu-btn">Sewa Kapal</a></li>
+                <li><a href="#kontak-kami" class="menu-btn">Kontak Kami</a></li>
+                <li><a href="#tentang-kami" class="menu-btn">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>
+
+    <hr>
+    <center>
+        <section id="paket-wisata">
+            <h2>Paket Wisata</h2>
+            <button id="lihat-paket-btn">Lihat Paket Wisata</button>
+        </section>
+    </center>
+    <div id="detail-paket-container">
+        <div class="paket-item" id="komodo">
+            <h3>Pulau Komodo</h3>
+            <p>Jelajahi keindahan alam Pulau Padar dengan panorama indah dan trekking menantang.</p>
+            <img src="./assets/gambar/pulau-komodo-nttb.jpg" alt="Pulau Komodo">
+        </div>
+        <div class="paket-item" id="padar">
+            <h3>Pulau Padar</h3>
+            <p>Temui naga purba di Taman Nasional Komodo dan nikmati pesona lautnya.</p>
+            <img src="./assets/gambar/pulau-padar-ntt.jpg" alt="Pulau Padar">
+        </div>
+        <div class="paket-item" id="rinca">
+            <h3>Pulau Rinca</h3>
+            <p>Temui naga purba di Taman Nasional Komodo dan nikmati pesona lautnya.</p>
+            <img src="./assets/gambar/pulau-rinca-ntt.jpg" alt="Pulau Rinca">
+        </div>
+        <div class="paket-item" id="kelor">
+            <h3>Pulau Kelor</h3>
+            <p>Temui naga purba di Taman Nasional Komodo dan nikmati pesona lautnya.</p>
+            <img src="./assets/gambar/pulau-kelor-ntt.jpg" alt="Pulau Kelor">
+        </div>
+    </div>
+    
+
+            <!-- Tambahkan elemen untuk pulau Rinca dan Kelor di sini -->
+        </div>
+    </section>
+
+    <script>
+        // JavaScript
+        document.getElementById("lihat-paket-btn").addEventListener("click", function() {
+            var detailContainer = document.getElementById("detail-paket-container");
+            if (detailContainer.style.display === "none") {
+                detailContainer.style.display = "block";
+            } else {
+                detailContainer.style.display = "none";
+            }
+        });
+    </script>
+
+    
+<section id="open-trip" class="bagian-open-trip">
+    <center>
+        <h1 style="font-size: 20px;">Open Trip</h1>
+        <p>Open Trip Labuan Bajo. Paket Wisata Labuan Bajo & Sewa Kapal Labuan Bajo. Travel Agent Profesional Ramah Hemat dan Terpercaya.</p>
+        <!-- Tombol "Open Trip" -->
+        <button id="lihat-open-trip-btn">Open Trip</button>
+    </center>
+    <br>
+    <!-- Konten "Open Trip" yang akan ditampilkan/sembunyikan -->
+    <!-- Konten "Open Trip" yang akan ditampilkan/sembunyikan -->
+<div id="detail-open-trip-container" style="display: none;">
+    <div class="gambar-pulau">
+        <div class="pulau">
+            <img src="./assets/gambar/pkomorang.jpg" alt="Pulau Komodo" style="width: 200px;">
+            <p><b>Pulau Komodo</b><br>Harga Kapal: Rp 2.500.000/orang<br>Deskripsi: Pulau Komodo adalah salah satu destinasi wisata terkenal di Labuan Bajo yang menawarkan pemandangan alam yang spektakuler dan keanekaragaman hayati yang luar biasa.</p>
+        </div>
+        <div class="pulau">
+            <img src="./assets/gambar/pdorang.jpg" alt="Pulau Padar" style="width: 200px;">
+            <p><b>Pulau Padar</b><br>Harga Kapal: Rp 2.200.000/orang<br>Deskripsi: Pulau Padar menawarkan panorama alam yang menakjubkan dengan bukit-bukit yang hijau dan pemandangan laut yang memukau. Ini adalah tempat yang sempurna untuk hiking dan menikmati matahari terbenam.</p>
+        </div>
+        <div class="pulau">
+            <img src="./assets/gambar/prorang.jpg" alt="Pulau Rinca" style="width: 200px;">
+            <p><b>Pulau Rinca</b><br>Harga Kapal: Rp 2.300.000/orang<br>Deskripsi: Pulau Rinca terkenal karena menjadi rumah bagi kadal komodo, hewan purba yang hanya ada di wilayah ini. Selain itu, pulau ini juga menawarkan trekking dan snorkeling yang menarik.</p>
+        </div>
+        <div class="pulau">
+            <img src="./assets/gambar/pkorang.jpg" alt="Pulau Kelor" style="width: 200px;">
+            <p><b>Pulau Kelor</b><br>Harga Kapal: Rp 2.000.000/orang<br>Deskripsi: Pulau Kelor adalah destinasi yang sempurna untuk snorkeling dan bersantai di pantai pasir putihnya. Anda juga bisa menjelajahi hutan kecil di pulau ini untuk mendapatkan pemandangan yang menakjubkan.</p>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<script>
+    // Mendapatkan elemen tombol "Open Trip"
+    var openTripButton = document.getElementById("lihat-open-trip-btn");
+    
+    // Mendapatkan elemen container untuk konten "Open Trip"
+    var openTripContainer = document.getElementById("detail-open-trip-container");
+    
+    // Menambahkan event listener ke tombol "Open Trip"
+    openTripButton.addEventListener("click", function() {
+        // Memeriksa apakah konten "Open Trip" sedang ditampilkan atau disembunyikan
+        if (openTripContainer.style.display === "none" || openTripContainer.style.display === "") {
+            // Jika konten "Open Trip" disembunyikan, tampilkan
+            openTripContainer.style.display = "block";
+        } else {
+            // Jika konten "Open Trip" ditampilkan, sembunyikan
+            openTripContainer.style.display = "none";
+        }
+    });
+</script>
+
+        
+        <hr>
+        <section id="sewa-kapal" class="bagian-sewa-kapal">
+            <center>
+                <h2>Sewa Kapal</h2>
+                <p>Sewa Kapal Labuan Bajo Murah dengan banyak pilihan kapal, mulai dari kapal Standart, Superior, dan Luxury. Harga sewa kapal tergantung dari pilihan paket.</p>
+                <!-- Tombol "Sewa Kapal" -->
+                <button id="lihat-sewa-kapal-btn">Sewa Kapal</button>
+            </center>
+            <br>
+            <!-- Konten "Sewa Kapal" yang akan ditampilkan/sembunyikan -->
+            <div id="detail-sewa-kapal-container" style="display: none;">
+                <div class="container">
+                    <div class="kapal">
+                        <div class="info-kapal">
+                            <h3>Phinisi 1</h3>
+                            <p>Harga Sewa: Rp 1.000.000/hari</p>
+                            <!-- Anda bisa menambahkan deskripsi atau detail lainnya di sini -->
+                        </div>
+                        <div class="gambar-kapal">
+                            <img src="./assets/gambar/Phinisi asli 1.jpeg" alt="Phinisi 1">
+                        </div>
+                    </div>
+                    <div class="kapal">
+                        <div class="info-kapal">
+                            <h3>Phinisi 2</h3>
+                            <p>Harga Sewa: Rp 1.500.000/hari</p>
+                            <!-- Anda bisa menambahkan deskripsi atau detail lainnya di sini -->
+                        </div>
+                        <div class="gambar-kapal">
+                            <img src="./assets/gambar/Phinisi asli2.webp" alt="Phinisi 2">
+                        </div>
+                    </div>
+                    <!-- Anda bisa menambahkan lebih banyak kapal di sini -->
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            // Mendapatkan elemen tombol "Sewa Kapal"
+            var sewaKapalButton = document.getElementById("lihat-sewa-kapal-btn");
+        
+            // Mendapatkan elemen container untuk konten "Sewa Kapal"
+            var sewaKapalContainer = document.getElementById("detail-sewa-kapal-container");
+        
+            // Menambahkan event listener ke tombol "Sewa Kapal"
+            sewaKapalButton.addEventListener("click", function() {
+                // Memeriksa apakah konten "Sewa Kapal" sedang ditampilkan atau disembunyikan
+                if (sewaKapalContainer.style.display === "none" || sewaKapalContainer.style.display === "") {
+                    // Jika konten "Sewa Kapal" disembunyikan, tampilkan
+                    sewaKapalContainer.style.display = "block";
+                } else {
+                    // Jika konten "Sewa Kapal" ditampilkan, sembunyikan
+                    sewaKapalContainer.style.display = "none";
+                }
+            });
+        </script>
+        
+            <section id="social-media" class="bagian-social-media">
+                <center>
+                    <h1 style="font-size: 20px;">Social Media</h1>
+                    <a href="https://www.facebook.com/profile.php?id=100070234311757" target="_blank"><img src="./assets/gambar/fb.png" alt="Facebook" style="width: 50px; height: 50px;"></a>
+                    <a href="Https://wa.me/6281218970433" target="_blank"><img src="./assets/gambar/wa.png" alt="WhatsApp" style="width: 50px; height: 50px;"></a>
+                    <a href="http://www.youtube.com/@LabuanBajo107" target="_blank"><img src="./assets/gambar/Youtube_logo.png" alt="Youtube" style="width: 50px; height: 50px;"></a>
+                    <a href="https://www.tiktok.com/@bayugianto" target="_blank"><img src="./assets/gambar/tiktok.jpg" alt="Tiktok" style="width: 50px; height: 50px;"></a>
+                </center>
+            </section>
+        </section>
+      
+    <hr>
+
+    <section id="kontak-kami" class="bagian-kontak-kami">
+        <center>
+            <h1 style="font-size: 20px;">Kontak Kami</h1>
+            <p>Jika Anda memiliki pertanyaan atau ingin melakukan pemesanan, jangan ragu untuk menghubungi kami.</p>
+            <p>Email: bbayugianto@gmail.com</p>
+            <p>Telepon: +62 812 1897 0433</p>
+        </center>
+    </section>
+    
+    <section id="faqs" class="bagian-faqs">
+        <center>
+            <h3><a href="javascript:void(0)" onclick="toggleInfo('pemesanan')">PEMESANAN</a></h3>
+            <div id="pemesanan" style="display: none;">
+                <p><strong>PEMESANAN:</strong> Bagaimana cara melakukan pemesanan?</p>
+                <p>Anda dapat melakukan pemesanan melalui website kami atau menghubungi kami melalui email atau telepon.</p>
+            </div>
+            
+            <h3><a href="javascript:void(0)" onclick="toggleInfo('pembayaran')">PEMBAYARAN</a></h3>
+            <div id="pembayaran" style="display: none;">
+                <p><strong>PEMBAYARAN:</strong> Bagaimana metode pembayaran yang tersedia?</p>
+                <p>Kami menerima pembayaran melalui transfer bank dan kartu kredit.</p>
+            </div>
+            
+            <h3><a href="javascript:void(0)" onclick="toggleInfo('syarat')">SYARAT</a></h3>
+            <div id="syarat" style="display: none;">
+                <p><strong>SYARAT:</strong> Apa saja syarat yang harus dipenuhi untuk melakukan perjalanan?</p>
+                <p>Setiap paket wisata memiliki syarat yang berbeda. Silakan lihat detail paket atau hubungi kami untuk informasi lebih lanjut.</p>
+            </div>
+            
+            <h3><a href="javascript:void(0)" onclick="toggleInfo('ketentuan')">KETENTUAN</a></h3>
+            <div id="ketentuan" style="display: none;">
+                <p><strong>KETENTUAN:</strong> Apakah ada ketentuan khusus yang harus diperhatikan?</p>
+                <p>Kami memiliki beberapa ketentuan yang harus dipatuhi oleh setiap peserta perjalanan. Detailnya akan diberikan saat pemesanan.</p>
+            </div>
+        </center>
+    </section>
+    
+    <script>
+    function toggleInfo(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section.style.display === "none") {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+    }
+    </script>
+<section id="social-media" class="bagian-social-media">
+<center>
+    <h1 style="font-size: 20px;">Social Media</h1>
+    <a href="https://www.facebook.com/profile.php?id=100070234311757" target="_blank"><img src="./assets/gambar/fb.png" alt="Facebook" style="width: 50px; height: 50px;"></a>
+    <a href="https://wa.me/6281218970433/" target="_blank"><img src="./assets/gambar/wa.png" alt="WhatsApp" style="width: 50px; height: 50px;"></a>
+    <a href="http://www.youtube.com/@LabuanBajo107" target="_blank"><img src="./assets/gambar/Youtube_logo.png" alt="Youtube" style="width: 50px; height: 50px;"></a>
+    <a href="https://www.tiktok.com/@bayugianto" target="_blank"><img src="./assets/gambar/tiktok.jpg" alt="Tiktok" style="width: 50px; height: 50px;"></a>
+</center>
+</section>
+   
+    <hr>
+
+    <section id="tentang-kami">
+        <h2>Tentang Kami</h2>
+<p>Tour and Travel Labuan Bajo adalah agen perjalanan yang berbasis di Labuan Bajo, Flores, Indonesia. Kami didedikasikan untuk memberikan pengalaman wisata yang tak terlupakan kepada pelanggan kami. Dengan berbagai paket wisata yang menarik, kami menawarkan petualangan yang sesuai dengan berbagai minat dan anggaran.</p>
+<p>Kami memiliki tim profesional yang berpengetahuan luas tentang destinasi dan layanan pelanggan yang ramah dan responsif. Dari momen Anda memesan perjalanan hingga kembali dari petualangan Anda, kami berkomitmen untuk memberikan layanan yang berkualitas dan pengalaman yang memuaskan.</p>
+<p>Di Tour and Travel Labuan Bajo, kami berusaha untuk menjaga lingkungan alam dan budaya setempat. Kami bekerja sama dengan komunitas lokal untuk mendukung pembangunan berkelanjutan dan melestarikan keanekaragaman hayati di kawasan yang kami kunjungi.</p>
+<p>Kami bangga menjadi bagian dari perjalanan Anda dan berharap dapat memberikan pengalaman liburan yang luar biasa yang akan selalu Anda ingat.</p>
+<h3>Menyediakan Pengalaman Liburan Terbaik</h3>
+<p>Heaven Komodo menawarkan berbagai macam pelayanan untuk memastikan liburan Anda di Labuan Bajo dan Pulau Komodo menjadi pengalaman yang menyenangkan dan berkesan. Kami berkomitmen untuk memberikan layanan berkualitas dan memastikan setiap detil perjalanan Anda terencana dengan baik.</p>
+<p>Layanan kami meliputi:</p>
+<ul>
+  <li>Open Trip Labuan Bajo</li>
+  <li>Sewa Kapal Labuan Bajo</li>
+  <li>Paket Tour Labuan Bajo</li>
+  <li>Trip Pulau Komodo</li>
+  <li>Trip Pulau Padar</li>
+  <li>Trip Pulau Rinca</li>
+  <li>Trip Pulau Kelor</li>
+  <li>Jasa Dokumentasi Foto dan Video</li>
+  <li>dan banyak lagi.</li>
+</ul>
+<p>Kami telah melayani sejumlah besar pelanggan yang puas dengan layanan kami, dan kami berusaha untuk terus memberikan pengalaman liburan terbaik untuk setiap tamu kami.</p>
+<p>Jadi, percayakan liburan Anda kepada kami dan nikmati petualangan tak terlupakan di Labuan Bajo dan Pulau Komodo bersama Heaven Komodo!</p>
+</div>
+ </section>
+
+    <hr>
+    <section id="kontak-kami" class="kontak-kami">
+        <h2 style="font-family: 'Arial', sans-serif; color: #333;">Hubungi Kami</h2>
+        <p style="font-family: 'Arial', sans-serif; color: #666;">Layanan Profesional, Harga Bersaing, Pengalaman Wisata yang Tak Terlupakan</p>
+        <!-- Tombol "Tampilkan Kontak" -->
+        <button id="tampilkan-kontak-btn" style="color: #333; background-color: transparent; border: 1px solid #333; padding: 10px 20px; cursor: pointer; border-radius: 5px;">Tampilkan Kontak</button>
+        <!-- Konten Informasi Kontak yang akan ditampilkan/sembunyikan -->
+        <div id="detail-kontak-container" style="display: none;">
+            <h3 style="font-family: 'Arial', sans-serif; color: #333;">Heaven Komodo</h3>
+            <p style="font-family: 'Arial', sans-serif; color: #666;"><strong>Alamat:</strong> Jl. Jati Putih, Batu Cermin, Labuan Bajo, Nusa Tenggara Tim. 65311</p>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="font-family: 'Arial', sans-serif; color: #666;"><strong>Telepon:</strong> +62812-1897-0433</li>
+                <li style="font-family: 'Arial', sans-serif; color: #666;"><strong>WhatsApp:</strong> 0812-1897-0433</li>
+                <li style="font-family: 'Arial', sans-serif; color: #666;"><strong>Email:</strong> <a href="mailto:bbayugianto@gmail.com" style="color: #333; text-decoration: none;">bbayugianto@gmail.com</a></li>
+                <li style="font-family: 'Arial', sans-serif; color: #666;"><strong>Website:</strong> <a href="https://www.heavenkomodo.com" target="_blank" style="color: #333; text-decoration: none;">www.heavenkomodo.com</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <script>
+        // Mendapatkan elemen tombol "Tampilkan Kontak"
+        var tampilkanKontakButton = document.getElementById("tampilkan-kontak-btn");
+    
+        // Mendapatkan elemen container untuk informasi kontak
+        var detailKontakContainer = document.getElementById("detail-kontak-container");
+    
+        // Menambahkan event listener ke tombol "Tampilkan Kontak"
+        tampilkanKontakButton.addEventListener("click", function() {
+            // Memeriksa apakah informasi kontak sedang ditampilkan atau disembunyikan
+            if (detailKontakContainer.style.display === "none" || detailKontakContainer.style.display === "") {
+                // Jika informasi kontak disembunyikan, tampilkan dengan transisi
+                detailKontakContainer.style.display = "block";
+                detailKontakContainer.style.transition = "display 0.5s ease-in-out";
+                // Ubah teks tombol menjadi "Sembunyikan Kontak"
+                tampilkanKontakButton.textContent = "Sembunyikan Kontak";
+            } else {
+                // Jika informasi kontak ditampilkan, sembunyikan dengan transisi
+                detailKontakContainer.style.display = "none";
+                detailKontakContainer.style.transition = "display 0.5s ease-in-out";
+                // Ubah teks tombol menjadi "Tampilkan Kontak"
+                tampilkanKontakButton.textContent = "Tampilkan Kontak";
+            }
+        });
+    </script>
+    
+    <footer class="footer" style="background-image: url('./assets/gambar/Kapal\ wisata\ L.\ Bajo.jpg'); background-size: cover; background-position: center; padding: 50px 0; color: white; text-align: center;">
+        <div class="footer-tengah">
+            <p class="footer-links">
+                <a href="#paket-wisata" class="menu-btn">Paket Wisata</a>
+                <a href="#open-trip" class="menu-btn">Open Trip</a>
+                <a href="#sewa-kapal" class="menu-btn">Sewa Kapal</a>
+                <a href="#kontak-kami" class="menu-btn">Kontak Kami</a>
+                <a href="#tentang-kami" class="menu-btn">Tentang Kami</a>
+            </p>
+          <h4 style="color: white;">Terimakasih Telah Berkunjung di Website Kami</h4>
+            <p style="color: white;">Hak Cipta &copy; 2024 Tours and Travel Labuan Bajo</p>
+            </center>
+        </div>
+    </footer> 
+</body>
+
+</html>

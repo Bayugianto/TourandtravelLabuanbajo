@@ -1,0 +1,513 @@
+/* Style for header */
+header {
+    background-image: url('./assets/gambar/kplbesar.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+header h1 {
+    color: aqua;
+    background-color: rgb(106, 146, 255);
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/* Style for section */
+section {
+    text-align: center;
+}
+
+section h2 {
+    color: #333;
+}
+
+/* Style for paket item */
+.paket-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.paket-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.paket-item p {
+    color: #666;
+}
+
+
+PAKET WISATA 
+/* Variasi untuk membuat bagian "PAKET WISATA" lebih menarik */
+#paket-wisata {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#detail-paket-container {
+    display: none;
+    text-align: center;
+}
+
+.paket-item {
+    margin-bottom: 40px;
+    border: 2px solid #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.paket-item:hover {
+    transform: scale(1.05);
+}
+
+.paket-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.paket-item p {
+    font-size: 16px;
+}
+
+.paket-item img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+ OPEN TRIP
+ .bagian-open-trip {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#detail-open-trip-container {
+    display: none;
+    margin-top: 20px; /* Tambahkan margin atas */
+}
+
+.gambar-pulau {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pulau {
+    margin: 20px; /* Beri jarak antar pulau */
+    padding: 20px; /* Tambahkan padding */
+    border: 2px solid #ddd; /* Tambahkan border */
+    border-radius: 10px; /* Tambahkan border-radius */
+    background-color: #f9f9f9; /* Tambahkan background-color */
+    max-width: 300px; /* Batasi lebar maksimum */
+}
+
+.pulau img {
+    width: 100%; /* Atur gambar agar mengisi lebar div */
+    height: auto;
+    border-radius: 8px; /* Tambahkan border-radius untuk gambar */
+}
+
+.pulau p {
+    font-size: 14px;
+    margin-top: 10px; /* Tambahkan margin atas */
+}
+
+SEWA KAPAL 
+.bagian-sewa-kapal {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#detail-sewa-kapal-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.kapal-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kapal-item {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 300px;
+}
+
+.info-kapal {
+    text-align: center;
+}
+
+.gambar-kapal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.gambar-kapal img {
+    width: 400px; /* Sesuaikan dengan lebar gambar Phinisi 1 */
+    height: 300px; /* Sesuaikan dengan tinggi gambar Phinisi 1 */
+    border-radius: 8px;
+}
+.bagian-social-media {
+    text-align: center;
+    margin-top: 20px; /* Tambahkan margin atas */
+}
+
+#social-media a {
+    display: inline-block;
+    margin: 10px; /* Tambahkan jarak antara gambar */
+}
+
+#social-media img {
+    width: 40px; /* Perkecil ukuran gambar logo */
+    height: auto;
+}
+
+
+KONTAK KAMI 
+.bagian-kontak-kami {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.judul-kontak-kami {
+    color: #336699;
+    font-size: 24px;
+}
+
+.deskripsi-kontak-kami {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.ikon-kontak {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.info-kontak-kami {
+    margin-bottom: 10px;
+}
+
+.link-kontak {
+    color: #336699;
+    text-decoration: none;
+}
+
+.link-kontak:hover {
+    text-decoration: underline;
+}
+
+
+TENTANG KAMI 
+.tentang-kami-content ul {
+    list-style-position: inside; /* Menempatkan tanda titik di dalam kontainer */
+    padding-left: 0; /* Menghapus padding kiri */
+}
+
+.tentang-kami-content ul li {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+
+UNTUK SEMUANYA 
+/* Style for header */
+header {
+    background-image: url('./assets/gambar/kplbesar.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+header h1 {
+    color: aqua;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/* Style for section */
+section {
+    text-align: center;
+}
+
+section h2 {
+    color: #333;
+}
+
+/* Style for paket item */
+.paket-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.paket-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.paket-item p {
+    color: #666;
+}
+
+/* Variasi untuk membuat bagian "PAKET WISATA" lebih menarik */
+#paket-wisata {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#detail-paket-container {
+    display: none;
+    text-align: center;
+}
+
+.paket-item {
+    margin-bottom: 40px;
+    border: 2px solid #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.paket-item:hover {
+    transform: scale(1.05);
+}
+
+.paket-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.paket-item p {
+    font-size: 16px;
+}
+
+.paket-item img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Style for "OPEN TRIP" */
+.bagian-open-trip {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#detail-open-trip-container {
+    display: none;
+    margin-top: 20px; /* Add top margin */
+}
+
+.gambar-pulau {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pulau {
+    margin: 20px; /* Add spacing between islands */
+    padding: 20px; /* Add padding */
+    border: 2px solid #ddd; /* Add border */
+    border-radius: 10px; /* Add border-radius */
+    background-color: #f9f9f9; /* Add background-color */
+    max-width: 300px; /* Limit maximum width */
+}
+
+.pulau img {
+    width: 100%; /* Make image fill the width of div */
+    height: auto;
+    border-radius: 8px; /* Add border-radius for images */
+}
+
+.pulau p {
+    font-size: 14px;
+    margin-top: 10px; /* Add top margin */
+}
+
+/* Style for "SEWA KAPAL" */
+.bagian-sewa-kapal {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#detail-sewa-kapal-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.kapal-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kapal-item {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 300px;
+}
+
+.info-kapal {
+    text-align: center;
+}
+
+.gambar-kapal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style for "SOCIAL MEDIA" */
+.bagian-social-media {
+    text-align: center;
+    margin-top: 20px; /* Add top margin */
+}
+
+#social-media a {
+    display: inline-block;
+    margin: 10px; /* Add spacing between images */
+}
+
+#social-media img {
+    width: 40px; /* Decrease size of logo images */
+    height: auto;
+}
+
+/* Style for "KONTAK KAMI" */
+.bagian-kontak-kami {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.judul-kontak-kami {
+    color: #336699;
+    font-size: 24px;
+}
+
+.deskripsi-kontak-kami {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.ikon-kontak {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.info-kontak-kami {
+    margin-bottom: 10px;
+}
+
+.link-kontak {
+    color: #336699;
+    text-decoration: none;
+}
+
+.link-kontak:hover {
+    text-decoration: underline;
+}
+
+/* Style for "TENTANG KAMI" */
+.tentang-kami-content ul {
+    list-style-position: inside; /* Place bullet inside container */
+    padding-left: 0; /* Remove left padding */
+}
+
+.tentang-kami-content ul li {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+/* Style for navigation links */
+header nav ul li {
+    display: inline-block; /* Membuat tautan navigasi berbaris secara horizontal */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px; /* Sesuaikan ukuran padding sesuai kebutuhan */
+}
+
+/* Style for menu buttons */
+.menu-btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px; /* Sesuaikan ukuran padding sesuai kebutuhan */
+    background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang */
+    border-radius: 5px; /* Agar tombol memiliki sudut yang melengkung */
+    transition: background-color 0.3s, color 0.3s; /* Tambahkan transisi untuk warna latar belakang dan teks */
+    margin-right: 10px; /* Menambahkan jarak antara setiap tombol */
+}
+
+.menu-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Ubah warna latar belakang saat dihover */
+    color: aqua; /* Ubah warna teks saat dihover */
+}
