@@ -42,3 +42,10 @@
 @media only screen and (max-width: 480px) {
     /* Tambahkan aturan CSS tambahan di sini jika diperlukan */
 }
+/* Media queries untuk layar dengan lebar maksimum 600px (misalnya untuk perangkat seluler) */
+@media (max-width: 600px) {
+    .menu-btn {
+        width: 100%; /* Menjadikan tombol mengisi lebar penuh */
+        margin: 5px 0; /* Atur jarak antar tombol */
+    }
+}
