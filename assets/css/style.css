@@ -498,16 +498,24 @@ header nav ul li a {
 
 /* Style for menu buttons */
 .menu-btn {
-    text-decoration: none;
     color: white;
-    padding: 10px 20px; /* Sesuaikan ukuran padding sesuai kebutuhan */
-    background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang */
-    border-radius: 5px; /* Agar tombol memiliki sudut yang melengkung */
-    transition: background-color 0.3s, color 0.3s; /* Tambahkan transisi untuk warna latar belakang dan teks */
-    margin-right: 10px; /* Menambahkan jarak antara setiap tombol */
+    text-decoration: none;
+    margin: 10  5px; /* Atur jarak horizontal antara tombol */
+    padding: 0px 150px; /* Atur padding tombol */
+    font-weight: bold;
+    border: 1px solid transparent; /* Tambahkan border */
+    border-radius: 5px; /* Agar tombol terlihat lebih menarik */
 }
 
 .menu-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Ubah warna latar belakang saat dihover */
-    color: aqua; /* Ubah warna teks saat dihover */
+    text-decoration: underline;
+}
+
+.menu-btn:focus {
+    outline: none; /* Hapus garis fokus */
+}
+
+.menu-btn:hover,
+.menu-btn:focus {
+    border-color: white; /* Ubah warna border saat tombol dihover atau difokuskan */
 }
